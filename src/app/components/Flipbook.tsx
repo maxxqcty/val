@@ -9,6 +9,15 @@ function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+
+interface PinData {
+  src: string;
+  position: string; // Tailwind position classes
+  size: string;     // Tailwind width/height
+  rotation: string; // Tailwind rotate class
+  pinColor?: string; // optional pin head color
+}
+
 // Page Data Interface
 interface PageData {
   id: number;
@@ -16,6 +25,8 @@ interface PageData {
   placeholderLabel: string;
   content: string;
   bgImage: string;
+  pins?: PinData[];
+
   pinImage?: string; // NEW
 }
 
@@ -27,14 +38,37 @@ const pages: PageData[] = [
     placeholderLabel: "Cover Image",
     content: "",
     bgImage: "/src/styles/assets/page1.jpg",
-     pinImage: "/src/styles/assets/pin2.jpg"
+     pinImage: "/src/styles/assets/pin2.jpg",
+      pins: [
+    {
+      src: "/src/styles/assets/pin2.jpg",
+      position: "top-10 right-10",
+      size: "w-20 h-20",
+      rotation: "rotate-6",
+      pinColor: "bg-red-400"
+    },
+    {
+      src: "/src/styles/assets/pin1.jpg",
+      position: "bottom-5 right-6",
+      size: "w-16 h-16",
+      rotation: "-rotate-12",
+      pinColor: "bg-yellow-400"
+    },
+    {
+      src: "/src/styles/assets/1pin1.jpg",
+      position: "top-30 left-2",
+      size: "w-20 h-20",
+      rotation: "rotate-3",
+      pinColor: "bg-pink-400"
+    }
+  ]
   },
   { 
     id: 2, 
     text: "Hi, Hello", 
     placeholderLabel: "Sweet Memory",
     content: "HAShaha hi hello ako pala eto ang your not so secret admirer/mego_nako_nah nga si axel the great. I just want to greet you happy valentine's day kay trip ra nako. Bitaw in all seriousness, I'd like to express my sincere gratitude for your existence through this sloppy digital card. Watch me cook ehehe",
-    bgImage: "/src/styles/assets/paper.jpg",
+    bgImage: "/src/styles/assets/paper1.jpg",
      pinImage: "/src/styles/assets/pin1.jpg"
   },
   { 
@@ -174,25 +208,61 @@ export function Flipbook() {
       exit={{ opacity: 0 }}
       onClick={() => setExpandedMessage(null)} // click outside to close
     >
-      <motion.div
-        className="relative bg-white rounded-xl shadow-2xl max-w-xl w-full p-8 overflow-y-auto"
-        initial={{ scale: 0.8 }}
-        animate={{ scale: 1 }}
-        exit={{ scale: 0.8 }}
-        onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
-      >
-        {/* Close Button */}
-        <button
-          onClick={() => setExpandedMessage(null)}
-          className="absolute top-4 right-4 text-purple-700 hover:text-purple-900 text-xl font-bold"
-        >
-          ✕
-        </button>
+     <motion.div
+  className="relative max-w-xl w-full p-8 rounded-xl shadow-2xl overflow-y-auto bg-cover bg-center"
+  style={{ backgroundImage: `url(${expandedMessage.bgImage})` }}
+  initial={{ scale: 0.8 }}
+  animate={{ scale: 1 }}
+  exit={{ scale: 0.8 }}
+  onClick={(e) => e.stopPropagation()}
+>
+  {/* Soft purple overlay like polaroid */}
+  <div className="absolute inset-0 bg-purple-500/5 rounded-xl" />
 
-        {/* Modal Content */}
-        <h2 className="text-xl font-bold mb-4 text-purple-700">{expandedMessage.text}</h2>
-        <p className="text-purple-900 font-serif leading-relaxed">{expandedMessage.content}</p>
-      </motion.div>
+  {/* Close Button */}
+  <button
+    onClick={() => setExpandedMessage(null)}
+    className="absolute top-4 right-4 text-purple-900 hover:text-purple-700 text-xl font-bold z-20"
+  >
+    ✕
+  </button>
+
+  {/* Modal Content */}
+  <div className="relative z-10 flex gap-6 items-start">
+
+  {/* LEFT SIDE — TEXT */}
+  <div className="flex-1">
+    <h2 className="text-xl font-bold mb-4 text-purple-900 italic">
+      {expandedMessage.text}
+    </h2>
+
+    <p className="text-purple-900/80 font-serif leading-relaxed italic">
+      "{expandedMessage.content}"
+    </p>
+  </div>
+
+  {/* RIGHT SIDE — PINNED IMAGE */}
+  {expandedMessage.pinImage && (
+    <div className="relative w-40 h-48 bg-white border-4 border-white shadow-xl rotate-3 rounded-sm">
+
+      <img
+        src={expandedMessage.pinImage}
+        alt="Pinned memory"
+        className="w-full h-full object-cover rounded-sm"
+      />
+
+      {/* Pin Head */}
+      <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-4 h-4 bg-red-400 rounded-full shadow-md flex items-center justify-center">
+        <div className="w-1 h-1 bg-white/60 rounded-full ml-1 mb-1" />
+      </div>
+
+    </div>
+  )}
+
+</div>
+
+</motion.div>
+
     </motion.div>
   )}
 </AnimatePresence>
@@ -409,38 +479,37 @@ function FlipPage({ data, index, currentPage, zIndex, onNext, onExpand}: {
       <div className="absolute inset-0 bg-white/[0.03] pointer-events-none" />
       
       {/* Decorative Pinned Image Corners */}
-      {/* Top Right Corner Pin */}
-      <div className={cn(
-        "absolute top-10 right-10 w-20 h-20 bg-white/5 border-6 border-white shadow-lg transform rotate-6 z-10",
-        "flex items-center justify-center rounded-sm"
-      )}>
-    <div className="w-full h-full bg-purple-900/40 flex items-center justify-center overflow-hidden rounded-sm">
-  <img 
-    src={data.pinImage}   // Or a separate property like `pinImage`
-    alt="Pinned"
-    className="w-full h-full object-cover rounded-sm"
-  />
-</div>
+     {/* Dynamic Pins */}
+{data.pins?.map((pin, i) => (
+  <div
+    key={i}
+    className={cn(
+      "absolute bg-white/5 border-4 border-white shadow-lg z-10 flex items-center justify-center rounded-sm",
+      pin.position,
+      pin.size,
+      pin.rotation
+    )}
+  >
+    <div className="w-full h-full overflow-hidden rounded-sm">
+      <img
+        src={pin.src}
+        alt="Pinned"
+        className="w-full h-full object-cover"
+      />
+    </div>
 
-        {/* Pin Head */}
-        <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-red-400 shadow-[2px_2px_4px_rgba(0,0,0,0.3)] z-20 flex items-center justify-center">
-             <div className="w-1 h-1 bg-white/60 rounded-full ml-1 mb-1" />
-        </div>
-      </div>
+    {/* Pin Head */}
+    <div
+      className={cn(
+        "absolute -top-3 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full shadow-[2px_2px_4px_rgba(0,0,0,0.3)] z-20 flex items-center justify-center",
+        pin.pinColor || "bg-red-400"
+      )}
+    >
+      <div className="w-1 h-1 bg-white/60 rounded-full ml-1 mb-1" />
+    </div>
+  </div>
+))}
 
-       {/* Bottom Left Corner Pin (Only on some pages for variety) */}
-       {index % 2 !== 0 && (
-         <div className={cn(
-          "absolute bottom-20 left-4 w-16 h-16 bg-white/5 border-4 border-white p-1 shadow-lg transform -rotate-12 z-10",
-          "flex items-center justify-center rounded-sm"
-        )}>
-          <div className="w-full h-full bg-indigo-900/40" />
-           {/* Pin Head */}
-          <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-yellow-400 shadow-[2px_2px_4px_rgba(0,0,0,0.3)] z-20 flex items-center justify-center">
-               <div className="w-1 h-1 bg-white/60 rounded-full ml-1 mb-1" />
-          </div>
-        </div>
-       )}
 
       {/* Content Container */}
       <div className="relative h-full flex flex-col items-center justify-center p-8 gap-8">
