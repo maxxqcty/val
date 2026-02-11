@@ -28,6 +28,7 @@ interface PageData {
   pins?: PinData[];
 
   pinImage?: string; // NEW
+   pinImagePosition?: string; // Tailwind classes like "top-4 right-4"
 }
 
 
@@ -228,7 +229,7 @@ export function Flipbook() {
   </button>
 
   {/* Modal Content */}
-  <div className="relative z-10 flex gap-6 items-start">
+  <div className="relative z-10 flex gap-6 items-center">
 
   {/* LEFT SIDE — TEXT */}
   <div className="flex-1">
