@@ -19,6 +19,7 @@ interface PageData {
   pinImage?: string; // NEW
 }
 
+
 const pages: PageData[] = [
   { 
     id: 1, 
@@ -30,9 +31,9 @@ const pages: PageData[] = [
   },
   { 
     id: 2, 
-    text: "Adventure Awaits", 
+    text: "Hi, Hello", 
     placeholderLabel: "Sweet Memory",
-    content: "HAShahahahhahahaha hi hello ako pala eto ang your not so secret admirer/mego_nako_nah nga si axel the great. I just want to greet you happy valentine's day kay trip ra nako. Bitaw in all seriousness, I'd like to express my sincere gratitude for your existence through this sloppy digital card. Watch me cook ehehe",
+    content: "HAShaha hi hello ako pala eto ang your not so secret admirer/mego_nako_nah nga si axel the great. I just want to greet you happy valentine's day kay trip ra nako. Bitaw in all seriousness, I'd like to express my sincere gratitude for your existence through this sloppy digital card. Watch me cook ehehe",
     bgImage: "/src/styles/assets/paper.jpg",
      pinImage: "/src/styles/assets/pin1.jpg"
   },
@@ -40,7 +41,7 @@ const pages: PageData[] = [
     id: 3, 
     text: "Magic Moments ✨", 
     placeholderLabel: "Magic Moment",
-    content: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    content: "First of all, thank u for being there, ur presence means so much to me. Every time naa ka it makes me happy hehehhaha. Lowkey lang pero you really make my days better. Even simple convos mean a lot to me hehe. Please take care of yourself always and always remember to SYBAU Stay Young Beautiful and Unique! :))",
     bgImage: "/src/styles/assets/paper.jpg",
      pinImage: "/src/styles/assets/pin1.jpg"
   },
@@ -48,7 +49,7 @@ const pages: PageData[] = [
     id: 4, 
     text: "Dream Big", 
     placeholderLabel: "Dream Big",
-    content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.",
+    content: "Sunod kay thank you kay comfortable ra kas akoa (i think haha) eventhough kabalo ka nga i have feelings for you gahahah after all we're Friends, right? and pasensya talaga dae if im annoying usahay ana kase ko kung komprtable na sa tawo huhu, kung uban pa to wa na FO na, I guess ur rare talaga eh. ekaw na gud na.",
     bgImage: "/src/styles/assets/paper.jpg",
      pinImage: "/src/styles/assets/pin1.jpg"
   },
@@ -56,15 +57,24 @@ const pages: PageData[] = [
     id: 5, 
     text: "Forever & Always 💫", 
     placeholderLabel: "Signature",
-    content: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    content: "HAHAHHA che let me tell you you are super amaaazing!!! (kabalo na dapat ka ana). I really like your interests and  thankfully we share some of those. I appreciate every small ideas and concept that we share. Even the small things feel special if it is with you. And if ever tagaan kog chance to talk about it with you, Forever is not enough. ",
     bgImage: "/src/styles/assets/paper.jpg",
      pinImage: "/src/styles/assets/pin1.jpg"
+  },
+    {
+    id: 6,
+    text: "A Little Secret 🤫",
+    placeholderLabel: "Secret",
+    content: "Lowkey lang pero you really make my days better. Even simple convos mean a lot to me hehe.",
+    bgImage: "/src/styles/assets/paper.jpg",
+    pinImage: "/src/styles/assets/pin1.jpg"
   },
 ];
 
 type Stage = 'intro' | 'rotating' | 'stopping' | 'reveal';
 
 export function Flipbook() {
+  const [expandedMessage, setExpandedMessage] = useState<PageData | null>(null);
   const [currentPage, setCurrentPage] = useState(0);
   const [stage, setStage] = useState<Stage>('intro');
 
@@ -99,6 +109,7 @@ export function Flipbook() {
   };
 
   return (
+    
     <div 
   style={{ backgroundImage: "url(src/styles/assets/bg3.jpg)" }}
   className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center text-purple-100 p-4 font-sans overflow-hidden relative"
@@ -154,12 +165,46 @@ export function Flipbook() {
         )}
       </AnimatePresence>
 
+     <AnimatePresence>
+  {expandedMessage && (
+    <motion.div
+      className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      onClick={() => setExpandedMessage(null)} // click outside to close
+    >
+      <motion.div
+        className="relative bg-white rounded-xl shadow-2xl max-w-xl w-full p-8 overflow-y-auto"
+        initial={{ scale: 0.8 }}
+        animate={{ scale: 1 }}
+        exit={{ scale: 0.8 }}
+        onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
+      >
+        {/* Close Button */}
+        <button
+          onClick={() => setExpandedMessage(null)}
+          className="absolute top-4 right-4 text-purple-700 hover:text-purple-900 text-xl font-bold"
+        >
+          ✕
+        </button>
+
+        {/* Modal Content */}
+        <h2 className="text-xl font-bold mb-4 text-purple-700">{expandedMessage.text}</h2>
+        <p className="text-purple-900 font-serif leading-relaxed">{expandedMessage.content}</p>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
+
+
+
       {/* Persistent Animated Div (The "Surprise" Box) */}
       {stage !== 'intro' && (
         <>
           <motion.div
           className={cn(
-  "fixed z-50 flex items-center justify-center rounded-2xl overflow-hidden",
+  "fixed z-40 flex items-center justify-center rounded-2xl overflow-hidden",
   "bg-purple-500/10 backdrop-blur-sm shadow-[0_0_40px_rgba(168,85,247,0.3)]"
 )}
 
@@ -233,6 +278,7 @@ export function Flipbook() {
                   currentPage={currentPage}
                   zIndex={pages.length - index}
                   onNext={handleNext}
+                  onExpand={setExpandedMessage} // NEW
                 />
               ))}
             </div>
@@ -317,12 +363,14 @@ function RoseParticle({ index, total }: { index: number, total: number }) {
   )
 }
 
-function FlipPage({ data, index, currentPage, zIndex, onNext }: { 
+function FlipPage({ data, index, currentPage, zIndex, onNext, onExpand}: { 
   data: PageData; 
   index: number; 
   currentPage: number; 
   zIndex: number;
   onNext: () => void;
+  onExpand: (page: PageData) => void; // NEW
+ 
 }) {
   const isFlipped = index < currentPage;
   
@@ -407,10 +455,18 @@ function FlipPage({ data, index, currentPage, zIndex, onNext }: {
              "transform transition-all"
            )}>
              {/* Text Content Area inside the Polaroid */}
-             <div
+            <div
   className="flex-1 p-6 overflow-hidden relative rounded-sm flex items-center justify-center bg-cover bg-center"
   style={{ backgroundImage: `url(${data.bgImage})` }}
+  onClick={(e) => {
+    e.stopPropagation(); // prevent triggering page flip
+
+     if (index !== 0) {    // <-- only allow expanding if NOT the first page
+      onExpand(data);
+     }
+  }}
 >
+
 
                 <div className="absolute inset-0 bg-purple-500/5" />
             <p
@@ -454,7 +510,11 @@ function FlipPage({ data, index, currentPage, zIndex, onNext }: {
       />
     </motion.div>
   );
+
+  
 }
+
+
 
 // Sparkle Component
 function Sparkle({ className, delay = 0, size = 16, id }: { className?: string, delay?: number, size?: number, id: string }) {
