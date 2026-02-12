@@ -38,25 +38,25 @@ const pages: PageData[] = [
     text: "Happy Valentine's Day! 💜", 
     placeholderLabel: "Cover Image",
     content: "",
-    bgImage: "/src/styles/assets/page1.jpg",
+    bgImage: "/src/styles/assets/flower5.jpg",
      pinImage: "/src/styles/assets/pin2.jpg",
       pins: [
     {
-      src: "/src/styles/assets/pin2.jpg",
+      src: "/src/styles/assets/flower1.jpg",
       position: "top-10 right-10",
       size: "w-20 h-20",
       rotation: "rotate-6",
       pinColor: "bg-red-400"
     },
     {
-      src: "/src/styles/assets/pin1.jpg",
-      position: "bottom-5 right-6",
+      src: "/src/styles/assets/flower3.jpg",
+      position: "bottom-40 right-6",
       size: "w-16 h-16",
       rotation: "-rotate-12",
       pinColor: "bg-yellow-400"
     },
     {
-      src: "/src/styles/assets/1pin1.jpg",
+      src: "/src/styles/assets/flower4.jpg",
       position: "top-30 left-2",
       size: "w-20 h-20",
       rotation: "rotate-3",
@@ -70,25 +70,25 @@ const pages: PageData[] = [
     placeholderLabel: "Sweet Memory",
     content: "HAShaha hi hello ako pala eto ang your not so secret admirer/mego_nako_nah nga si axel the great. I just want to greet you happy valentine's day kay trip ra nako. Bitaw in all seriousness, I'd like to express my sincere gratitude for your existence through this sloppy digital card. Watch me cook ehehe",
     bgImage: "/src/styles/assets/paper1.jpg",
-     pinImage: "/src/styles/assets/pin1.jpg",
+     pinImage: "/src/styles/assets/page2bg.jpg",
     pins: [
   {
-    src: "/src/styles/assets/pin1.jpg",
+    src: "/src/styles/assets/page2pin.jpg",
     position: "top-10 right-4",
     size: "w-20 h-20",
     rotation: "-rotate-12",
     pinColor: "bg-purple-400"
   },
   {
-    src: "/src/styles/assets/pin2.jpg",
-    position: "bottom-8 left-8",
-    size: "w-16 h-16",
+    src: "/src/styles/assets/will1.jpg",
+    position: "bottom-30 left-8",
+    size: "w-25 h-25",
     rotation: "rotate-6",
     pinColor: "bg-yellow-400"
   },
   {
-    src: "/src/styles/assets/1pin1.jpg",
-    position: "bottom-12 right-6",
+    src: "/src/styles/assets/mike1.jpg",
+    position: "bottom-30 right-6",
     size: "w-20 h-20",
     rotation: "-rotate-3",
     pinColor: "bg-red-400"
@@ -102,27 +102,27 @@ const pages: PageData[] = [
     text: "Magic Moments ✨", 
     placeholderLabel: "Magic Moment",
     content: "First of all, thank u for being there, ur presence means so much to me. Every time naa ka it makes me happy hehehhaha. Lowkey lang pero you really make my days better. Even simple convos mean a lot to me hehe. Please take care of yourself always and always remember to SYBAU Stay Young Beautiful and Unique! :))",
-    bgImage: "/src/styles/assets/paper.jpg",
-     pinImage: "/src/styles/assets/pin1.jpg",
+    bgImage: "/src/styles/assets/paper1.jpg",
+     pinImage: "/src/styles/assets/page3bg.jpg",
      pins: [
   {
-    src: "/src/styles/assets/pin2.jpg",
+    src: "/src/styles/assets/dust2.jpg",
     position: "top-6 left-10",
     size: "w-16 h-16",
     rotation: "rotate-12",
     pinColor: "bg-blue-400"
   },
   {
-    src: "/src/styles/assets/pin1.jpg",
+    src: "/src/styles/assets/max1.jpg",
     position: "top-12 right-8",
     size: "w-20 h-20",
     rotation: "-rotate-6",
     pinColor: "bg-pink-400"
   },
   {
-    src: "/src/styles/assets/1pin1.jpg",
-    position: "bottom-8 right-4",
-    size: "w-16 h-16",
+    src: "/src/styles/assets/dust1.jpg",
+    position: "bottom-27 right-10",
+    size: "w-26 h-26",
     rotation: "rotate-3",
     pinColor: "bg-yellow-400"
   }
@@ -135,8 +135,8 @@ const pages: PageData[] = [
     text: "Dream Big", 
     placeholderLabel: "Dream Big",
     content: "Sunod kay thank you kay comfortable ra kas akoa (i think haha) eventhough kabalo ka nga i have feelings for you gahahah after all we're Friends, right? and pasensya talaga dae if im annoying usahay ana kase ko kung komprtable na sa tawo huhu, kung uban pa to wa na FO na, I guess ur rare talaga eh. ekaw na gud na.",
-    bgImage: "/src/styles/assets/paper.jpg",
-     pinImage: "/src/styles/assets/pin1.jpg",
+    bgImage: "/src/styles/assets/paper1.jpg",
+     pinImage: "/src/styles/assets/court-jester-dancing.gif",
      pins: [
   {
     src: "/src/styles/assets/pin1.jpg",
@@ -146,14 +146,14 @@ const pages: PageData[] = [
     pinColor: "bg-red-400"
   },
   {
-    src: "/src/styles/assets/pin2.jpg",
-    position: "bottom-10 left-4",
-    size: "w-16 h-16",
+    src: "/src/styles/assets/dust3.jpg",
+    position: "bottom-30 left-30",
+    size: "w-20 h-20",
     rotation: "rotate-12",
     pinColor: "bg-purple-400"
   },
   {
-    src: "/src/styles/assets/1pin1.jpg",
+    src: "/src/styles/assets/flower3.jpg",
     position: "top-14 right-6",
     size: "w-20 h-20",
     rotation: "-rotate-6",
@@ -168,26 +168,26 @@ const pages: PageData[] = [
     text: "Forever & Always 💫", 
     placeholderLabel: "Signature",
     content: "HAHAHHA che let me tell you you are super amaaazing!!! (kabalo na dapat ka ana). I really like your interests and  thankfully we share some of those. I appreciate every small ideas and concept that we share. Even the small things feel special if it is with you. And if ever tagaan kog chance to talk about it with you, Forever is not enough. ",
-    bgImage: "/src/styles/assets/paper.jpg",
-     pinImage: "/src/styles/assets/pin1.jpg",
+    bgImage: "/src/styles/assets/paper1.jpg",
+     pinImage: "/src/styles/assets/lego.gif",
      pins: [
   {
-    src: "/src/styles/assets/pin2.jpg",
+    src: "/src/styles/assets/geto1.jpg",
     position: "top-6 right-10",
     size: "w-20 h-20",
     rotation: "rotate-6",
     pinColor: "bg-yellow-400"
   },
   {
-    src: "/src/styles/assets/pin1.jpg",
-    position: "bottom-8 left-6",
-    size: "w-16 h-16",
+    src: "/src/styles/assets/loak1.jpg",
+    position: "bottom-80 left-6",
+    size: "w-20 h-20",
     rotation: "-rotate-12",
     pinColor: "bg-blue-400"
   },
   {
-    src: "/src/styles/assets/1pin1.jpg",
-    position: "bottom-12 right-4",
+    src: "/src/styles/assets/gojo1.jpg",
+    position: "bottom-30 right-4",
     size: "w-20 h-20",
     rotation: "rotate-3",
     pinColor: "bg-red-400"
@@ -201,26 +201,26 @@ const pages: PageData[] = [
     text: "A Little Secret 🤫",
     placeholderLabel: "Secret",
     content: "Okay fine… aminado ko hahah maybe I like you more than I planned to. It wasn’t supposed to be like this. I was just supposed to admire you quietly, joke around, and stay safe. But here I am — caring a little too much and smiling a little too often hohay.",
-    bgImage: "/src/styles/assets/paper.jpg",
-    pinImage: "/src/styles/assets/pin1.jpg",
+    bgImage: "/src/styles/assets/paper1.jpg",
+    pinImage: "/src/styles/assets/nayeon.gif",
     pins: [
   {
-    src: "/src/styles/assets/pin1.jpg",
+    src: "/src/styles/assets/flower9.jpg",
     position: "top-8 left-8",
     size: "w-16 h-16",
     rotation: "rotate-12",
     pinColor: "bg-pink-400"
   },
   {
-    src: "/src/styles/assets/pin2.jpg",
+    src: "/src/styles/assets/flower6.jpg",
     position: "top-12 right-6",
     size: "w-20 h-20",
     rotation: "-rotate-6",
     pinColor: "bg-yellow-400"
   },
   {
-    src: "/src/styles/assets/1pin1.jpg",
-    position: "bottom-10 right-8",
+    src: "/src/styles/assets/flower7.jpg",
+    position: "bottom-30 right-8",
     size: "w-20 h-20",
     rotation: "rotate-3",
     pinColor: "bg-purple-400"
@@ -235,29 +235,22 @@ const pages: PageData[] = [
     text: "A Little Secret 🤫",
     placeholderLabel: "Secret",
     content: "Before we finish this little thing, I just wanna say… I really appreciate you. Like, honestly, you make even the dumbest days better just by being you. Every chat, every laugh, every random moment — it means a lot. No matter what, I hope we stay friends, because having you around is seriously the best.",
-    bgImage: "/src/styles/assets/paper.jpg",
-    pinImage: "/src/styles/assets/pin1.jpg",
+    bgImage: "/src/styles/assets/paper1.jpg",
+    pinImage: "/src/styles/assets/apprec.jpg",
     pins: [
   {
-    src: "/src/styles/assets/pin1.jpg",
-    position: "top-8 left-8",
+    src: "/src/styles/assets/flower10.jpg",
+    position: "top-60 left-8",
     size: "w-16 h-16",
     rotation: "rotate-12",
     pinColor: "bg-pink-400"
   },
   {
-    src: "/src/styles/assets/pin2.jpg",
+    src: "/src/styles/assets/flower11.jpg",
     position: "top-12 right-6",
     size: "w-20 h-20",
     rotation: "-rotate-6",
     pinColor: "bg-yellow-400"
-  },
-  {
-    src: "/src/styles/assets/1pin1.jpg",
-    position: "bottom-10 right-8",
-    size: "w-20 h-20",
-    rotation: "rotate-3",
-    pinColor: "bg-purple-400"
   }
 ]
 
