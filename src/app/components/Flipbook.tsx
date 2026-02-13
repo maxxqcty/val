@@ -37,7 +37,7 @@ interface PageData {
 const pages: PageData[] = [
   { 
     id: 1, 
-    text: "Happy Valentine's Day! 💜", 
+    text: "❤️ Happy Valentine's Day! 💜💮", 
     placeholderLabel: "Cover Image",
     content: "",
     bgImage: "/src/styles/assets/flower5.jpg",
@@ -68,7 +68,7 @@ const pages: PageData[] = [
   },
   { 
     id: 2, 
-    text: "Hi, Hello", 
+    text: "", 
     placeholderLabel: "Sweet Memory",
     content: "HAShaha hi hello ako pala eto ang your not so secret admirer/mego_nako_nah nga si axel the great. I just want to greet you happy valentine's day kay trip ra nako. Bitaw in all seriousness, I'd like to express my sincere gratitude for your existence through this sloppy digital card. Watch me cook ehehe",
     bgImage: "/src/styles/assets/paper1.jpg",
@@ -101,8 +101,8 @@ const pages: PageData[] = [
   },
   { 
     id: 3, 
-    text: "Magic Moments ✨", 
-    placeholderLabel: "Magic Moment",
+    text: "", 
+    placeholderLabel: "",
     content: "First of all, thank u for being there, ur presence means so much to me. Every time naa ka it makes me happy hehehhaha. Lowkey lang pero you really make my days better. Even simple convos mean a lot to me hehe. Please take care of yourself always and always remember to SYBAU Stay Young Beautiful and Unique! :))",
     bgImage: "/src/styles/assets/paper1.jpg",
      pinImage: "/src/styles/assets/page3bg.jpg",
@@ -134,7 +134,7 @@ const pages: PageData[] = [
   },
   { 
     id: 4, 
-    text: "Dream Big", 
+    text: "", 
     placeholderLabel: "Dream Big",
     content: "Sunod kay thank you kay comfortable ra kas akoa (i think haha) eventhough kabalo ka nga i have feelings for you gahahah after all we're Friends, right? and pasensya talaga dae if im annoying usahay ana kase ko kung komprtable na sa tawo huhu, kung uban pa to wa na FO na, I guess ur rare talaga eh. ekaw na gud na.",
     bgImage: "/src/styles/assets/paper1.jpg",
@@ -167,7 +167,7 @@ const pages: PageData[] = [
   },
   { 
     id: 5, 
-    text: "Forever & Always 💫", 
+    text: "", 
     placeholderLabel: "Signature",
     content: "HAHAHHA che let me tell you you are super amaaazing!!! (kabalo na dapat ka ana). I really like your interests and  thankfully we share some of those. I appreciate every small ideas and concept that we share. Even the small things feel special if it is with you. And if ever tagaan kog chance to talk about it with you, Forever is not enough. ",
     bgImage: "/src/styles/assets/paper1.jpg",
@@ -200,7 +200,7 @@ const pages: PageData[] = [
   },
     {
     id: 6,
-    text: "A Little Secret 🤫",
+    text: "",
     placeholderLabel: "Secret",
     content: "Okay fine… aminado ko hahah maybe I like you more than I planned to. It wasn’t supposed to be like this. I was just supposed to admire you quietly, joke around, and stay safe. But here I am — caring a little too much and smiling a little too often hohay.",
     bgImage: "/src/styles/assets/paper1.jpg",
@@ -234,7 +234,7 @@ const pages: PageData[] = [
 
     {
     id: 7,
-    text: "A Little Secret 🤫",
+    text: "",
     placeholderLabel: "Secret",
     content: "Before we finish this little thing, I just wanna say… I may sometimes not show it but I really appreciate you. Like, honestly, you make even the dumbest days better just by being you. Every chat, every laugh, every random moment, it means a lot to me. No matter what, I hope we stay friends, because having you around is seriously the best think i could whish for.",
     bgImage: "/src/styles/assets/paper1.jpg",
@@ -257,6 +257,38 @@ const pages: PageData[] = [
 ]
 
 
+  },
+
+   {
+    id: 8,
+    text: "",
+    placeholderLabel: "Secret",
+    content: "Oel ngati kameie.",
+    bgImage: "/src/styles/assets/paper1.jpg",
+     pinImage: "/src/styles/assets/quar.jpg",
+    pins: [
+  // {
+  //   src: "/src/styles/assets/flower9.jpg",
+  //   position: "top-8 left-8",
+  //   size: "w-16 h-16",
+  //   rotation: "rotate-12",
+  //   pinColor: "bg-pink-400"
+  // },
+  {
+    src: "/src/styles/assets/quar.jpg",
+    position: "top-12 right-6",
+    size: "w-27 h-27",
+    rotation: "-rotate-6",
+    pinColor: "bg-yellow-400"
+  },
+  // {
+  //   src: "/src/styles/assets/flower7.jpg",
+  //   position: "bottom-30 right-8",
+  //   size: "w-20 h-20",
+  //   rotation: "rotate-3",
+  //   pinColor: "bg-purple-400"
+  // }
+]
   },
 ];
 
@@ -438,8 +470,8 @@ export function Flipbook() {
         <>
           <motion.div
           className={cn(
-  "fixed z-40 flex items-center justify-center rounded-2xl overflow-hidden",
-  "bg-purple-500/10 backdrop-blur-sm shadow-[0_0_40px_rgba(168,85,247,0.3)]"
+  "fixed z-40 flex items-center justify-center rounded-2xl overflow-hidden"
+  // "bg-purple-500/10 backdrop-blur-sm shadow-[0_0_40px_rgba(168,85,247,0.3)]"
 )}
 
             initial={{ 
@@ -452,27 +484,24 @@ export function Flipbook() {
               rotate: 0,
               scale: 0
             }}
-            animate={{
-              scale: 1,
-              // Rotation Logic: Spin during 'rotating', stop at 'stopping', maybe tilt at 'exploding'
-              rotate: stage === 'rotating' ? 360 : 0,
-              
-              // Movement Logic: Move to top-left during 'reveal'
-              top: (stage === 'reveal') ? '40px' : '50%',
-              left: (stage === 'reveal') ? '40px' : '50%',
-              x: (stage === 'reveal') ? '0%' : '-50%',
-              y: (stage === 'reveal') ? '0%' : '-50%',
-              width: (stage === 'reveal') ? 70 : 260,
-              height: (stage === 'reveal') ? 70 : 260,
-              borderRadius: (stage === 'reveal') ? '50%' : '16px',
-            }}
-            transition={{
-              rotate: stage === 'rotating' ? { duration: 4, ease: "linear", repeat: Infinity } : { duration: 0.5 },
-              default: { duration: 1.5, ease: [0.34, 1.56, 0.64, 1] } // Slower movement
-            }}
+           animate={{
+  scale: stage === 'reveal' ? 1 : 1,
+  rotate: [0, 360], // spin from 0° → 360°
+  top: stage === 'reveal' ? '40px' : '50%',
+  left: stage === 'reveal' ? '40px' : '50%',
+  x: stage === 'reveal' ? '0%' : '-50%',
+  y: stage === 'reveal' ? '0%' : '-50%',
+  width: stage === 'reveal' ? 70 : 260,
+  height: stage === 'reveal' ? 70 : 260,
+  borderRadius: stage === 'reveal' ? '50%' : '16px',
+}}
+transition={{
+  rotate: { repeat: Infinity, duration: 4, ease: "linear" },
+  default: { duration: 1.5, ease: [0.34, 1.56, 0.64, 1] },
+}}
           >
            <img
-    src="src/styles/assets/flower2.jpg"
+    src="src/styles/assets/flower2.png"
     alt="Logo"
   className={cn(
     "w-full h-full object-contain transition-all duration-500",
@@ -617,35 +646,35 @@ function FlipPage({ data, index, currentPage, zIndex, onNext, onExpand}: {
   
   return (
     <motion.div
-      onClick={() => { if (index === currentPage) onNext() }}
-      className={cn(
-        "absolute inset-0 w-full h-full cursor-pointer",
-        "bg-gradient-to-br from-violet-900 to-black", 
-        "border border-white/10 rounded-[32px]",
-        "shadow-[0_4px_20px_-2px_rgba(0,0,0,0.6)]",
-        // Enhanced shadow for depth
-        "[backface-visibility:hidden] overflow-hidden origin-left" 
-      )}
-      style={{ 
-        zIndex,
-        transformStyle: "preserve-3d",
-      }}
-      animate={{
-        rotateY: isFlipped ? -180 : 0,
-        x: isFlipped ? -40 : 0, 
-        // Subtle random rotation for stack effect when active
-        rotateZ: index === currentPage ? 0 : (index - currentPage) * 1.5,
-        scale: index === currentPage ? 1 : 0.95 + (0.01 * (pages.length - index)),
-      }}
-      transition={{
-        // Slower, smoother spring animation
-        type: "spring",
-        stiffness: 45,
-        damping: 18,
-        mass: 1.2,
-        restDelta: 0.001
-      }}
-    >
+  onClick={() => { if (index === currentPage) onNext() }}
+  className={cn(
+    "absolute inset-0 w-full h-full cursor-pointer",
+    "border border-white/10 rounded-[32px]",
+    "shadow-[0_4px_20px_-2px_rgba(0,0,0,0.6)]",
+    "[backface-visibility:hidden] overflow-hidden origin-left"
+  )}
+  style={{ 
+    zIndex,
+    transformStyle: "preserve-3d",
+    backgroundImage: `url(/src/styles/assets/pagebg.jpg)`, // <-- single bg
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+  animate={{
+    rotateY: isFlipped ? -180 : 0,
+    x: isFlipped ? -40 : 0, 
+    rotateZ: index === currentPage ? 0 : (index - currentPage) * 1.5,
+    scale: index === currentPage ? 1 : 0.95 + (0.01 * (pages.length - index)),
+  }}
+  transition={{
+    type: "spring",
+    stiffness: 45,
+    damping: 18,
+    mass: 1.2,
+    restDelta: 0.001
+  }}
+>
+
       {/* Glassmorphism Overlay */}
       <div className="absolute inset-0 bg-white/[0.03] pointer-events-none" />
       
