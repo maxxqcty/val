@@ -234,7 +234,7 @@ const pages: PageData[] = [
     id: 7,
     text: "A Little Secret 🤫",
     placeholderLabel: "Secret",
-    content: "Before we finish this little thing, I just wanna say… I really appreciate you. Like, honestly, you make even the dumbest days better just by being you. Every chat, every laugh, every random moment — it means a lot. No matter what, I hope we stay friends, because having you around is seriously the best.",
+    content: "Before we finish this little thing, I just wanna say… I may sometimes not show it but I really appreciate you. Like, honestly, you make even the dumbest days better just by being you. Every chat, every laugh, every random moment, it means a lot to me. No matter what, I hope we stay friends, because having you around is seriously the best think i could whish for.",
     bgImage: "/src/styles/assets/paper1.jpg",
     pinImage: "/src/styles/assets/apprec.jpg",
     pins: [
@@ -385,7 +385,7 @@ export function Flipbook() {
 
   {/* LEFT SIDE — TEXT */}
   <div className="flex-1">
-    <h2 className="text-xl font-bold mb-4 text-purple-900 italic">
+    <h2 className="handwritten-title text-xl font-bold mb-4 text-purple-900 italic">
       {expandedMessage.text}
     </h2>
 
@@ -711,7 +711,8 @@ function FlipPage({ data, index, currentPage, zIndex, onNext, onExpand}: {
 
         {/* Heading Text Content */}
         <div className="text-center space-y-4 max-w-[280px] z-10">
-          <h2 className="text-3l font-extrabold text-white leading-tight drop-shadow-[0_2px_10px_rgba(168,85,247,0.5)]">
+  <h2 className="handwritten-title text-3xl text-pink-200 leading-tight tracking-wide drop-shadow-[0_3px_20px_rgba(255,192,203,0.8)]">
+
             {data.text}
           </h2>
           <p className="text-purple-200/80 text-sm font-medium">
