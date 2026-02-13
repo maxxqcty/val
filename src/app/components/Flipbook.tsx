@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Sparkles, Image as ImageIcon, ChevronRight, ChevronLeft, Gift } from 'lucide-react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
+import { useRef } from "react";
+
 
 // Utility for merging classes
 function cn(...inputs: ClassValue[]) {
@@ -264,6 +266,7 @@ export function Flipbook() {
   const [expandedMessage, setExpandedMessage] = useState<PageData | null>(null);
   const [currentPage, setCurrentPage] = useState(0);
   const [stage, setStage] = useState<Stage>('intro');
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   // Sequence Controller
   useEffect(() => {
@@ -322,7 +325,15 @@ export function Flipbook() {
             exit={{ opacity: 0, scale: 0.8, filter: "blur(10px)" }}
             transition={{ duration: 0.5 }}
             className="z-50 flex flex-col items-center justify-center gap-6 cursor-pointer"
-            onClick={() => setStage('rotating')}
+         onClick={() => {
+  setStage('rotating');
+
+  if (audioRef.current) {
+    audioRef.current.volume = 0.5; // optional
+    audioRef.current.play().catch(() => {});
+  }
+}}
+
           >
              <motion.div 
                animate={{ 
@@ -552,6 +563,13 @@ export function Flipbook() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <audio
+  ref={audioRef}
+  src="/music/greenday.mp3"
+  loop
+/>
+
     </div>
   );
 }
