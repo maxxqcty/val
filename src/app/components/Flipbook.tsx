@@ -37,7 +37,7 @@ interface PageData {
 const pages: PageData[] = [
   { 
     id: 1, 
-    text: "❤️ Happy Valentine's Day! 💜💮", 
+    text: "❤️ Happy Valentine's Day! 💜", 
     placeholderLabel: "Cover Image",
     content: "",
     bgImage: "/src/styles/assets/flower5.jpg",
@@ -202,7 +202,7 @@ const pages: PageData[] = [
     id: 6,
     text: "",
     placeholderLabel: "Secret",
-    content: "Okay fine… aminado ko hahah maybe I like you more than I planned to. It wasn’t supposed to be like this. I was just supposed to admire you quietly, joke around, and stay safe. But here I am — caring a little too much and smiling a little too often hohay.",
+    content: "Okay fine… aminado ko hahah maybe I like you more than I planned to. It wasn’t supposed to be like this. I was just supposed to admire you quietly, joke around, and stay safe. But here I am, caring a little too much and smiling a little too often hohay.",
     bgImage: "/src/styles/assets/paper1.jpg",
     pinImage: "/src/styles/assets/nayeon.gif",
     pins: [
@@ -290,6 +290,37 @@ const pages: PageData[] = [
   // }
 ]
   },
+
+   {
+    id: 9,
+    text: "",
+    placeholderLabel: "Secret",
+   content: "\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n",
+    bgImage: "/src/styles/assets/CHE.png",
+    pins: [
+  // {
+  //   src: "/src/styles/assets/flower9.jpg",
+  //   position: "top-8 left-8",
+  //   size: "w-16 h-16",
+  //   rotation: "rotate-12",
+  //   pinColor: "bg-pink-400"
+  // },
+  {
+    src: "/src/styles/assets/page9pin.jpg",
+    position: "top-5 right-6",
+    size: "w-20 h-20",
+    rotation: "-rotate-6",
+    pinColor: "bg-yellow-400"
+  },
+  {
+    src: "/src/styles/assets/dog.jpg",
+    position: "bottom-20 left-3",
+    size: "w-20 h-20",
+    rotation: "rotate-3",
+    pinColor: "bg-purple-400"
+  }
+]
+  },
 ];
 
 type Stage = 'intro' | 'rotating' | 'stopping' | 'reveal';
@@ -341,12 +372,12 @@ export function Flipbook() {
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-violet-900/20 rounded-full blur-[120px] pointer-events-none" />
       
       {/* Floating Sparkles (Background) */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <Sparkle id="s1" className="top-10 left-10 text-purple-400" delay={0} />
-        <Sparkle id="s2" className="top-1/3 right-8 text-pink-400" delay={2} />
-        <Sparkle id="s3" className="bottom-20 left-12 text-violet-400" delay={1} />
-        <Sparkle id="s4" className="top-20 right-1/2 text-purple-300" size={12} delay={3} />
-      </div>
+     <div className="absolute inset-0 overflow-hidden pointer-events-none">
+  {Array.from({ length: 16 }).map((_, i) => (
+    <Sparkle key={i} id={`s${i}`} delay={Math.random() * 4} size={16 + Math.random() * 12} />
+  ))}
+</div>
+
 
       <AnimatePresence mode="wait">
         {stage === 'intro' && (
@@ -787,23 +818,33 @@ function FlipPage({ data, index, currentPage, zIndex, onNext, onExpand}: {
 
 
 // Sparkle Component
-function Sparkle({ className, delay = 0, size = 16, id }: { className?: string, delay?: number, size?: number, id: string }) {
+function Sparkle({ delay = 0, size = 16, id }: { delay?: number; size?: number; id: string }) {
+  const top = Math.random() * 100;  // 0% - 100%
+  const left = Math.random() * 100; // 0% - 100%
+
+  // Optional: random color
+  const colors = ['text-purple-400', 'text-pink-400', 'text-violet-400', 'text-purple-300', 'text-purple-200', 'text-pink-300'];
+  const color = colors[Math.floor(Math.random() * colors.length)];
+
   return (
     <motion.div
-      className={cn("absolute", className)}
+      className={`absolute ${color}`}
+      style={{ top: `${top}%`, left: `${left}%` }}
       animate={{
-        scale: [0, 1, 0],
+        scale: [0, 1.2, 0],
         opacity: [0, 1, 0],
-        rotate: [0, 45, 90]
+        rotate: [0, 45, 90],
       }}
       transition={{
         duration: 3,
         repeat: Infinity,
-        delay: delay,
-        ease: "easeInOut"
+        delay,
+        ease: "easeInOut",
       }}
     >
       <Sparkles size={size} />
     </motion.div>
   );
 }
+
+
