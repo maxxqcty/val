@@ -40,25 +40,25 @@ const pages: PageData[] = [
     text: "❤️ Happy Valentine's Day! 💜", 
     placeholderLabel: "Cover Image",
     content: "",
-    bgImage: "public/styles/assets/flower5.jpg",
-     pinImage: "/public/styles/assets/pin2.jpg",
+    bgImage: "styles/assets/flower5.jpg",
+     pinImage: "styles/assets/pin2.jpg",
       pins: [
     {
-      src: "public/styles/assets/flower1.jpg",
+      src: "styles/assets/flower1.jpg",
       position: "top-10 right-10",
       size: "w-20 h-20",
       rotation: "rotate-6",
       pinColor: "bg-red-400"
     },
     {
-      src: "public/styles/assets/flower3.jpg",
+      src: "styles/assets/flower3.jpg",
       position: "bottom-40 right-6",
       size: "w-16 h-16",
       rotation: "-rotate-12",
       pinColor: "bg-yellow-400"
     },
     {
-      src: "public/styles/assets/flower4.jpg",
+      src: "styles/assets/flower4.jpg",
       position: "top-30 left-2",
       size: "w-20 h-20",
       rotation: "rotate-3",
@@ -71,25 +71,25 @@ const pages: PageData[] = [
     text: "", 
     placeholderLabel: "Sweet Memory",
     content: "HAShaha hi hello ako pala eto ang your not so secret admirer/mego_nako_nah nga si axel the great. I just want to greet you happy valentine's day kay trip ra nako. Bitaw in all seriousness, I'd like to express my sincere gratitude for your existence through this sloppy digital card. Watch me cook ehehe",
-    bgImage: "public/styles/assets/paper1.jpg",
-     pinImage: "public/styles/assets/page2bg.jpg",
+    bgImage: "styles/assets/paper1.jpg",
+     pinImage: "styles/assets/page2bg.jpg",
     pins: [
   {
-    src: "public/styles/assets/page2pin.jpg",
+    src: "styles/assets/page2pin.jpg",
     position: "top-10 right-4",
     size: "w-20 h-20",
     rotation: "-rotate-12",
     pinColor: "bg-purple-400"
   },
   {
-    src: "public/styles/assets/will1.jpg",
+    src: "styles/assets/will1.jpg",
     position: "bottom-30 left-8",
     size: "w-25 h-25",
     rotation: "rotate-6",
     pinColor: "bg-yellow-400"
   },
   {
-    src: "public/styles/assets/mike1.jpg",
+    src: "styles/assets/mike1.jpg",
     position: "bottom-30 right-6",
     size: "w-20 h-20",
     rotation: "-rotate-3",
@@ -104,25 +104,25 @@ const pages: PageData[] = [
     text: "", 
     placeholderLabel: "",
     content: "First of all, thank u for being there, ur presence means so much to me. Every time naa ka it makes me happy hehehhaha. Lowkey lang pero you really make my days better. Even simple convos mean a lot to me hehe. Please take care of yourself always and always remember to SYBAU Stay Young Beautiful and Unique! :))",
-    bgImage: "public/styles/assets/paper1.jpg",
-     pinImage: "public/styles/assets/page3bg.jpg",
+    bgImage: "styles/assets/paper1.jpg",
+     pinImage: "styles/assets/page3bg.jpg",
      pins: [
   {
-    src: "public/styles/assets/dust2.jpg",
+    src: "styles/assets/dust2.jpg",
     position: "top-6 left-10",
     size: "w-16 h-16",
     rotation: "rotate-12",
     pinColor: "bg-blue-400"
   },
   {
-    src: "public/styles/assets/max1.jpg",
+    src: "styles/assets/max1.jpg",
     position: "top-12 right-8",
     size: "w-20 h-20",
     rotation: "-rotate-6",
     pinColor: "bg-pink-400"
   },
   {
-    src: "public/styles/assets/dust1.jpg",
+    src: "styles/assets/dust1.jpg",
     position: "bottom-27 right-10",
     size: "w-26 h-26",
     rotation: "rotate-3",
@@ -137,25 +137,25 @@ const pages: PageData[] = [
     text: "", 
     placeholderLabel: "Dream Big",
     content: "Sunod kay thank you kay comfortable ra kas akoa (i think haha) eventhough kabalo ka nga i have feelings for you gahahah after all we're Friends, right? and pasensya talaga dae if im annoying usahay ana kase ko kung komprtable na sa tawo huhu, kung uban pa to wa na FO na, I guess ur rare talaga eh. ekaw na gud na.",
-    bgImage: "public/styles/assets/paper1.jpg",
-     pinImage: "public/styles/assets/court-jester-dancing.gif",
+    bgImage: "styles/assets/paper1.jpg",
+     pinImage: "styles/assets/court-jester-dancing.gif",
      pins: [
   {
-    src: "public/styles/assets/pin1.jpg",
+    src: "styles/assets/pin1.jpg",
     position: "top-8 left-6",
     size: "w-20 h-20",
     rotation: "-rotate-3",
     pinColor: "bg-red-400"
   },
   {
-    src: "public/styles/assets/dust3.jpg",
+    src: "styles/assets/dust3.jpg",
     position: "bottom-30 left-30",
     size: "w-20 h-20",
     rotation: "rotate-12",
     pinColor: "bg-purple-400"
   },
   {
-    src: "public/styles/assets/flower3.jpg",
+    src: "styles/assets/flower3.jpg",
     position: "top-14 right-6",
     size: "w-20 h-20",
     rotation: "-rotate-6",
@@ -170,25 +170,25 @@ const pages: PageData[] = [
     text: "", 
     placeholderLabel: "Signature",
     content: "HAHAHHA che let me tell you you are super amaaazing!!! (kabalo na dapat ka ana). I really like your interests and  thankfully we share some of those. I appreciate every small ideas and concept that we share. Even the small things feel special if it is with you. And if ever tagaan kog chance to talk about it with you, Forever is not enough. ",
-    bgImage: "public/styles/assets/paper1.jpg",
-     pinImage: "public/styles/assets/lego.gif",
+    bgImage: "styles/assets/paper1.jpg",
+     pinImage: "styles/assets/lego.gif",
      pins: [
   {
-    src: "public/styles/assets/geto1.jpg",
+    src: "styles/assets/geto1.jpg",
     position: "top-6 right-10",
     size: "w-20 h-20",
     rotation: "rotate-6",
     pinColor: "bg-yellow-400"
   },
   {
-    src: "public/styles/assets/loak1.jpg",
+    src: "styles/assets/loak1.jpg",
     position: "bottom-80 left-6",
     size: "w-20 h-20",
     rotation: "-rotate-12",
     pinColor: "bg-blue-400"
   },
   {
-    src: "public/styles/assets/gojo1.jpg",
+    src: "styles/assets/gojo1.jpg",
     position: "bottom-30 right-4",
     size: "w-20 h-20",
     rotation: "rotate-3",
@@ -203,25 +203,25 @@ const pages: PageData[] = [
     text: "",
     placeholderLabel: "Secret",
     content: "Okay fine… aminado ko hahah maybe I like you more than I planned to. It wasn’t supposed to be like this. I was just supposed to admire you quietly, joke around, and stay safe. But here I am, caring a little too much and smiling a little too often hohay.",
-    bgImage: "public/styles/assets/paper1.jpg",
-    pinImage: "public/styles/assets/nayeon.gif",
+    bgImage: "styles/assets/paper1.jpg",
+    pinImage: "styles/assets/nayeon.gif",
     pins: [
   {
-    src: "public/styles/assets/flower9.jpg",
+    src: "styles/assets/flower9.jpg",
     position: "top-8 left-8",
     size: "w-16 h-16",
     rotation: "rotate-12",
     pinColor: "bg-pink-400"
   },
   {
-    src: "public/styles/assets/flower6.jpg",
+    src: "styles/assets/flower6.jpg",
     position: "top-12 right-6",
     size: "w-20 h-20",
     rotation: "-rotate-6",
     pinColor: "bg-yellow-400"
   },
   {
-    src: "public/styles/assets/flower7.jpg",
+    src: "styles/assets/flower7.jpg",
     position: "bottom-30 right-8",
     size: "w-20 h-20",
     rotation: "rotate-3",
@@ -237,18 +237,18 @@ const pages: PageData[] = [
     text: "",
     placeholderLabel: "Secret",
     content: "Before we finish this little thing, I just wanna say… I may sometimes not show it but I really appreciate you. Like, honestly, you make even the dumbest days better just by being you. Every chat, every laugh, every random moment, it means a lot to me. No matter what, I hope we stay friends, because having you around is seriously the best think i could whish for.",
-    bgImage: "public/styles/assets/paper1.jpg",
-    pinImage: "public/styles/assets/apprec.jpg",
+    bgImage: "styles/assets/paper1.jpg",
+    pinImage: "styles/assets/apprec.jpg",
     pins: [
   {
-    src: "public/styles/assets/flower10.jpg",
+    src: "styles/assets/flower10.jpg",
     position: "top-60 left-8",
     size: "w-16 h-16",
     rotation: "rotate-12",
     pinColor: "bg-pink-400"
   },
   {
-    src: "public/styles/assets/flower11.jpg",
+    src: "styles/assets/flower11.jpg",
     position: "top-12 right-6",
     size: "w-20 h-20",
     rotation: "-rotate-6",
@@ -264,25 +264,25 @@ const pages: PageData[] = [
     text: "",
     placeholderLabel: "Secret",
     content: "Oel ngati kameie.",
-    bgImage: "public/styles/assets/paper1.jpg",
-     pinImage: "public/styles/assets/quar.jpg",
+    bgImage: "styles/assets/paper1.jpg",
+     pinImage: "styles/assets/quar.jpg",
     pins: [
   // {
-  //   src: "public/styles/assets/flower9.jpg",
+  //   src: "styles/assets/flower9.jpg",
   //   position: "top-8 left-8",
   //   size: "w-16 h-16",
   //   rotation: "rotate-12",
   //   pinColor: "bg-pink-400"
   // },
   {
-    src: "public/styles/assets/quar.jpg",
+    src: "styles/assets/quar.jpg",
     position: "top-12 right-6",
     size: "w-27 h-27",
     rotation: "-rotate-6",
     pinColor: "bg-yellow-400"
   },
   // {
-  //   src: "public/styles/assets/flower7.jpg",
+  //   src: "styles/assets/flower7.jpg",
   //   position: "bottom-30 right-8",
   //   size: "w-20 h-20",
   //   rotation: "rotate-3",
@@ -296,24 +296,24 @@ const pages: PageData[] = [
     text: "",
     placeholderLabel: "Secret",
    content: "\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n\u00A0\n",
-    bgImage: "public/styles/assets/CHE.png",
+    bgImage: "styles/assets/CHE.png",
     pins: [
   // {
-  //   src: "public/styles/assets/flower9.jpg",
+  //   src: "styles/assets/flower9.jpg",
   //   position: "top-8 left-8",
   //   size: "w-16 h-16",
   //   rotation: "rotate-12",
   //   pinColor: "bg-pink-400"
   // },
   {
-    src: "public/styles/assets/page9pin.jpg",
+    src: "styles/assets/page9pin.jpg",
     position: "top-5 right-6",
     size: "w-20 h-20",
     rotation: "-rotate-6",
     pinColor: "bg-yellow-400"
   },
   {
-    src: "public/styles/assets/dog.jpg",
+    src: "styles/assets/dog.jpg",
     position: "bottom-20 left-3",
     size: "w-20 h-20",
     rotation: "rotate-3",
@@ -626,7 +626,7 @@ transition={{
 
       <audio
   ref={audioRef}
-  src="public/music/greenday.mp3"
+  src="music/greenday.mp3"
   loop
 />
 
@@ -687,7 +687,7 @@ function FlipPage({ data, index, currentPage, zIndex, onNext, onExpand}: {
   style={{ 
     zIndex,
     transformStyle: "preserve-3d",
-    backgroundImage: `url(public/styles/assets/pagebg.jpg)`, // <-- single bg
+    backgroundImage: `url(styles/assets/pagebg.jpg)`, // <-- single bg
     backgroundSize: "cover",
     backgroundPosition: "center",
   }}
